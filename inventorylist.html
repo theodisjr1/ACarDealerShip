@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inventory with carousel</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type="text/css">
+body {
+  font-size: 62.5%;
+  font-family: arial, sans-serif;
+  background-color: black;
+}
+#nttLogo{
+  height: 100px;
+  width: 100px;
+}
+#websiteTitle{
+  font-size: 10em;
+  vertical-align: middle;
+  font-family: 'Pacifico', cursive;
+  padding-left: 15px;
+  color: #191970;
+}
+#websiteSlogan{
+  font-size: 5.4em;
+}
+
+/* Carousel Styling */
+.slide1{
+  background-image: url('bkgrnd1.png');
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('bkgrnd2.png');
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('bkgrnd3.png');
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide4{
+  background-image: url('bkgrnd4.png');
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide5{
+  background-image: url('bkgrnd5.png');
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 5.4em;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: .4em;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+</style>
+
+<div class="page-header">
+  <h1> <small>A Car Dealership: Here are our more popular products.</small></h1>
+</div>
+
+  </head>
+  <body>
+
+    <div class="container">
+
+
+
+
+<!-- Carousel -->
+<!-- Surround everything with a div with the class carousel slide -->
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Define how many slides to put in the carousel -->
+  <ol class="carousel-indicators">
+    <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
+    <li data-target="#theCarousel" data-slide-to="1"> </li>
+    <li data-target ="#theCarousel" data-slide-to="2"> </li>
+    <li data-target="#theCarousel" data-slide-to="3"> </li>
+    <li data-target ="#theCarousel" data-slide-to="4"> </li>
+  </ol >
+
+  <!-- Define the text to place over the image -->
+  <div class="carousel-inner">
+    <div class="item active" >
+    <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Range Rover" />
+    <div class="carousel-caption">
+      <h1>Range Rover</h1>
+      <p>Our customers seem to prefer this more than any other vehicle we offer.</p>
+      <p><a href="#" class="btn btn-primary btn-sm">Get one Now</a></p>
+    </div>
+  </div>
+  <div class="item">
+  <img id="imgcar2" src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="BMW" />
+  <div class="carousel-caption">
+    <h1>BMW</h1>
+    <p>This car screams "Class!"</p>
+      <p><a href="#" class="btn btn-primary btn-sm">Get one Now</a></p>
+  </div>
+  </div>
+  <div class="item">
+    <img id="imgcar3" src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Mercedees"/>
+  <div class="carousel-caption">
+  <h1>Mercedees</h1>
+  <p>Another popular one</p>
+  <p><a href="#" class="btn btn-primary btn-sm">Get one Now</a></p>
+</div>
+</div>
+  <div class="item">
+  <img id="imgcar4" src="https://images.pexels.com/photos/80465/ford-mustang-auto-vehicle-80465.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Mustang"/>
+  <div class="carousel-caption">
+  <h1>Mustang</h1>
+  <p>Bring sally up!</p>
+  <p><a href="#" class="btn btn-primary btn-sm">Get one Now</a></p>
+</div>
+</div>
+<div class="item">
+<img id="imgcar5" src="https://images.pexels.com/photos/2071/broken-car-vehicle-vintage.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Rust Bucket" />
+<div class="carousel-caption">
+<h1>A simple Rust Bucket</h1>
+<p>Ugly cars need love too!</p>
+<p><a href="#" class="btn btn-primary btn-sm">Get one Now</a></p>
+</div>
+</div>
+</div>
+  </div>
+
+
+  <!-- Set the actions to take when the arrows are clicked -->
+  <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"> </span>
+  </a>
+  <a class="right carousel-control" href="#theCarousel" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+  </div>
+  <div>
+    <p>
+      <a href="index.html" class = "btn btn-warning btn-lg" style="text-align:center">Return Home!</a>
+    </p>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- Use downloaded version of Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

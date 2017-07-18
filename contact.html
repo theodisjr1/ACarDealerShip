@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>A Car Dealership</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+ <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <a class="headerlogo" href="index.html">
+                <img src="http://www.autocarbrands.com/wp-content/uploads/2014/06/AUTOLOGO.png" />
+            </a>
+            <span id="headername">A Car Dealership</span>
+            <p>click logo to return to home page</P>
+
+        </div>
+
+        <nav class="navbar-background">
+
+            <ul>
+
+              <li><a class="navlink active" href="index.html">Home</a></li>
+              <li><a class="navlink" href="inventorylist.html">Inventory</a></li>
+              <li><a class="navlink" href="about.html">About</a></li>
+              <li><a class="navlink" href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <div id="welcomeimage">
+       <img src="http://www.autocarbrands.com/wp-content/uploads/2014/06/AUTOLOGO.png" height="400px" alt="About us">
+     </div>
+ <form id="contactForm">
+   <fieldset>
+     <div>
+     <legend>Enter your Contact info below:</legend>
+      <p>
+     <label for="fullname">Full Name:</label><input type="text" name="fullname" id="fullname">
+      </p>
+ <p>
+     <label for="email">   Email:</label><input type="email" name="email" id="email">
+ </p>
+ <p><label for="quest">Your Question</label><br>
+   <textarea name="quest" id="" cols="50" rows="10" maxlength="500"></textarea></p>
+ </div>
+
+ </fieldset>
+   <p>
+   <button id="btnSendInfo" class="submitbutton">Send Info</button>
+   </p>
+ </form>
+      <footer>
+        <p>We are located at Hollywood & Vine, four blocks from Height Street; Your Town, your Country</p>
+        <p class="textcontent">All sales are final</P>
+          <p class="smalltext">Our cars are non-drivable</p>
+        </footer>
+
+  </body>
+</html>
